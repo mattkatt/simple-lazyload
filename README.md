@@ -9,9 +9,11 @@ Additionally, if the object is a **\<video\>**, then the script begins playback 
 Once the function returns an array of length 0 (i.e. all objects have been loaded), then the event listeners are removed.
 
 ## Usage
+
+### JS Placement
 Place the lazyload.min.js in your document **\<head\>**, or include lazyload.js with any gulp/combined js files to be minified and placed in the head.
 
----
+### DOM Structure
 
 To use lazyload.js, only small changes need to be made to your DOM:
 - **Images/Videos:**
