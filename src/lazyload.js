@@ -12,9 +12,9 @@ function lazyLoad() {
           src = elem.dataset.src,
           rect = elem.getBoundingClientRect();
 
-      if (rect.top <= (window.innerHeight + 100)) {
+      if (rect.top <= (window.innerHeight + 100) && elem.offsetTop != 0) {
 
-        if (list.contains("lazyBG")) {
+        if (list.contains("lazyBG") && elem.offsetHeight != 0) {
           elem.style.backgroundImage = "url(" + src + ")";
         }
 
