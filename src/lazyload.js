@@ -12,9 +12,9 @@ function lazyLoad() {
           src = elem.dataset.src,
           rect = elem.getBoundingClientRect();
 
-      if (rect.top <= (window.innerHeight + 100) && elem.offsetTop != 0) {
+      if (rect.top <= (window.innerHeight + 100) && elem.x != 0) {
 
-        if (list.contains("lazyBG") && elem.offsetHeight != 0) {
+        if (list.contains("lazyBG")) {
           elem.style.backgroundImage = "url(" + src + ")";
         }
 
@@ -38,4 +38,4 @@ function lazyLoad() {
 
 window.addEventListener('load', lazyLoad, false);
 window.addEventListener('orientationchange', lazyLoad, false);
-document.addEventListener('scroll', lazyLoad, false);
+document.addEventListener('scroll', lazyLoad, false)
