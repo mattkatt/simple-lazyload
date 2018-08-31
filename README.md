@@ -1,5 +1,5 @@
 # lazyload
-A simple JS to lazy load images, videos and background-images.
+A simple JS to lazy load images, videos and background-images.<br>
 **Current Version** - 1.1
 
 ## Process
