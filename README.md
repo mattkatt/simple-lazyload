@@ -36,5 +36,6 @@ To use lazyload.js, only small changes need to be made to your DOM:
 Currently, only **IE11+Edge** are supported, due to the use of clasList(*IE10+*) and dataset(*IE11+*). As of July 2018, this is excluding **1.8%** of global browser usage.
 
 ## @todo
-- [ ] Increase support to IE10 and/or IE9
+- [X] Increase support to IE10...
+- [ ] ...and/or IE9
 - [ ] Add option for user to set their own distance trigger (width 100px as default)
