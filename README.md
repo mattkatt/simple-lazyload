@@ -1,6 +1,6 @@
 # lazyload
 A simple JS to lazy load images, videos and background-images.<br>
-**Current Version** - 1.1
+**Current Version** - 1.2
 
 ## Process
 First, the function is attached to event listeners for **load**, **scroll** and **orientationchange** (for mobile). Every time one of these events is triggered, the function builds an array of all DOM objects to be lazy loaded, then checkes their position relative to the browser window - if the object is higher than 100px **below** the brower window, the objects data-src and src are switched and the class *lazyload* is removed. 
