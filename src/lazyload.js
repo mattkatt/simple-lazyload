@@ -25,7 +25,8 @@ function lazyLoad() {
                     }
                 }
 
-                elem.setAttribute('class', list.splice(list.indexOf("lazyload"), 1));
+                list.splice(list.indexOf("lazyload"), 1);
+                elem.setAttribute('class', list.join(' '));
             }
         }
     }
