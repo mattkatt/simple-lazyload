@@ -31,7 +31,9 @@
                         }
 
                         if (lazyBG <= -1) {
-                            elem.src = src;
+                            if (src) {
+                                elem.src = src;
+                            }
 
                             if (set) {
                                 elem.srcset = set;
@@ -57,7 +59,7 @@
             var script = document.querySelector('script#lazyloadjs');
 
             if (typeof offset !== "number") {
-                offset = 200;
+                offset = 20;
             }
 
             if (script.hasAttribute('data-offset')) {
