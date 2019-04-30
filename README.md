@@ -1,4 +1,4 @@
-# lazyload
+# simple-lazyload.js
 A simple JS to lazy load images, videos and background-images. Also supports srcset <br>
 **Current Version** - 1.5
 
