@@ -51,7 +51,7 @@
                 }
             } else {
                 for (i = 0; i < lazyload.events.length; i++) {
-                    window.removeEventListener(lazyload.events[i]+".lazyload", lazyload.run);
+                    window.removeEventListener(lazyload.events[i], lazyload.run);
                 }
             }
         },
@@ -59,17 +59,17 @@
             var script = document.querySelector('script#lazyloadjs');
 
             if (typeof offset !== "number") {
-                offset = 20;
+                offset = 200;
             }
 
-            if (script.hasAttribute('data-offset')) {
+            if (script && script.hasAttribute('data-offset')) {
                 offset = script.getAttribute('data-offset');
             }
 
             lazyload.setOffset(offset);
 
             for (var j = 0; j < lazyload.events.length; j++) {
-                window.addEventListener(lazyload.events[j]+".lazyload", lazyload.run, false);
+                window.addEventListener(lazyload.events[j], lazyload.run, false);
             }
             lazyload.run();
         }
