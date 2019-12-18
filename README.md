@@ -53,8 +53,9 @@ To use lazyload.js, only small changes need to be made to your DOM:
   ```html
   <img class="lazyload someOtherClass" data-src="large-default/img.jpg" data-srcset="small/img.jpg 400w, medium/img.jpg 800w, large-default/img.jpg 1200w" sizes="(-webkit-min-device-pixel-ratio: 2) 50vw, (min-resolution: 192dpi) 50vw, (min-resolution: 2dppx) 50vw, (-webkit-min-device-pixel-ratio: 3) 33.33vw, (min-resolution: 288dpi) 33.33vw, (min-resolution: 3dppx) 33.33vw" alt="Alt Text">
   ```
-#### Suggestion
-To prevent the broken image icon from appearing before load, set the image src to a blank, 1x1 image hosted on your site. 
+#### Suggestions
+- To prevent the broken image icon from appearing before load, set the image src to a blank, 1x1 image hosted on your site.
+- To account for visitors with JavaScript disabled, follow every image with a `<noscript>` version of the image.
 
 ## Support
 This has been tested on all modern browsers, and is backwards compatible to IE9+. If any bugs are found, please report them to me ASAP *~Matt*
