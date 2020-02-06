@@ -10,7 +10,7 @@ Once the function returns an array of length 0 (i.e. all objects have been loade
 ## Usage
 
 ### JS Placement
-Download the lazyload.min.js file and place it withing your project. Place the following script tag in your document **\<head\>**, *or* at the start or end of you document **\<body\>**:
+Download the lazyload.min.js file and place it within your project. Place the following script tag in your document **\<head\>**, *or* at the start or end of you document **\<body\>**:
 ```html
 <script type="text/javascript" src="path/to/lazyload.min.js" id="lazyloadjs"></script>
 ```
